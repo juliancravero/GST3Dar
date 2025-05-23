@@ -1,16 +1,37 @@
-import { Link } from "react-router-dom";
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import './Navbar.css';
+import logo from '/logo.png';
 
-export default function Navbar() {
+const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
-    <nav className="bg-blue-700 text-white p-4">
-      <div className="container mx-auto flex justify-between items-center">
-        <Link to="/" className="font-bold text-xl">GST 3D</Link>
-        <div className="space-x-6">
-          <Link to="/" className="hover:underline">Inicio</Link>
-          <Link to="/about" className="hover:underline">Sobre Nosotros</Link>
-          <Link to="/contact" className="hover:underline">Contacto</Link>
-        </div>
+    <header className="navbar">
+      <div className="logo-container">
+        <Link to="/">
+          <img src={logo} alt="Logo" className="logo" />
+        </Link>
       </div>
-    </nav>
+
+      <nav className={`nav-links ${menuOpen ? 'active' : ''}`}>
+        <Link to="/" onClick={() => setMenuOpen(false)}>Home</Link>
+        <Link to="/about" onClick={() => setMenuOpen(false)}>Nosotros</Link>
+        <Link to="/products" onClick={() => setMenuOpen(false)}>Productos</Link>
+        <Link to="/contact" onClick={() => setMenuOpen(false)}>Contacto</Link>
+      </nav>
+
+      <div
+        className={`hamburger ${menuOpen ? 'open' : ''}`}
+        onClick={() => setMenuOpen(!menuOpen)}
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
   );
-}
+};
+
+export default Navbar;
+

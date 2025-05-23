@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 
-const categorias = ['PLA', 'PETG', 'TPU', 'SILK', 'ABS', 'ASA', 'ESPECIALES']
+const categorias = ['PLA', 'PETG', 'TPU', 'SILK', 'ABS', 'ASA', 'ESPECIALES'];
 
 const productos = {
   PLA: [
@@ -57,53 +57,42 @@ const productos = {
       imagen: '/images/especial-carbon.jpg',
     },
   ],
-}
+};
 
 const Products = () => {
-  const [categoriaSeleccionada, setCategoriaSeleccionada] = useState('PLA')
+  const [categoriaSeleccionada, setCategoriaSeleccionada] = useState('PLA');
 
   return (
-    <section className="p-4 max-w-6xl mx-auto">
-      <h2 className="text-3xl font-bold text-center mb-6">Nuestros Productos</h2>
+    <section className="products-container">
+      <h2 className="products-title">Nuestros Productos</h2>
 
-      {/* Botones de categoría */}
-      <div className="flex flex-wrap justify-center gap-2 mb-6">
+      <div className="category-buttons">
         {categorias.map((cat) => (
           <button
             key={cat}
             onClick={() => setCategoriaSeleccionada(cat)}
-            className={`px-4 py-2 rounded-full text-sm font-medium border ${
-              categoriaSeleccionada === cat
-                ? 'bg-black text-white'
-                : 'bg-white text-black'
-            } transition`}
+            className={`category-button ${
+              categoriaSeleccionada === cat ? 'active' : ''
+            }`}
           >
             {cat}
           </button>
         ))}
       </div>
 
-      {/* Cards de productos */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <div className="products-grid">
         {productos[categoriaSeleccionada]?.map((prod, idx) => (
-          <div
-            key={idx}
-            className="bg-white rounded-2xl shadow-md overflow-hidden"
-          >
-            <img
-              src={prod.imagen}
-              alt={prod.nombre}
-              className="w-full h-48 object-cover"
-            />
-            <div className="p-4">
-              <h3 className="text-lg font-semibold">{prod.nombre}</h3>
-              <p className="text-sm text-gray-600">{prod.descripcion}</p>
+          <div key={idx} className="product-card">
+            <img src={prod.imagen} alt={prod.nombre} className="product-img" />
+            <div className="product-info">
+              <h3>{prod.nombre}</h3>
+              <p>{prod.descripcion}</p>
             </div>
           </div>
         ))}
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Products
+export default Products;

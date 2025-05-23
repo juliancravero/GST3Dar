@@ -1,4 +1,5 @@
 import Hero from "../components/Hero";
+import GallerySection from '../components/GallerySection';
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
           de nuestros clientes, siempre con innovación y compromiso.
         </p>
       </section>
+      <GallerySection />
     </div>
   );
 }
