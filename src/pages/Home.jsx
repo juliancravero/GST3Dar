@@ -12,7 +12,7 @@ export default function Home() {
           de nuestros clientes, siempre con innovación y compromiso.
         </p>
       </section>
-      <GallerySection />
+      <GallerySection /> 
     </div>
   );
 }

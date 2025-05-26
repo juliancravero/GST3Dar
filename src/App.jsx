@@ -12,27 +12,20 @@ import Products from './pages/Products'
 import Home from './pages/Home'
 
 function App() {
-const [menuAbierto, setMenuAbierto] = useState(false)
-
-  const toggleMenu = () => {
-    setMenuAbierto(!menuAbierto)
-  }
 
   return (
-    <Router>
-      <Navbar menuAbierto={menuAbierto} toggleMenu={toggleMenu} />
-
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/products" element={<Products />} />
-        {/* agregá más rutas si querés */}
-      </Routes>
-
-      <footer>
-        <p>© 2025 GST3Dar</p>
-      </footer>
-    </Router>
-  )
+      <div className="landing">
+      <img src="/logo.png" alt="GST 3D Logo" className="landing-logo" />
+      <a
+        href="https://www.instagram.com/gst3d.lat/?hl=es"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="landing-link"
+      >
+        Seguinos en Instagram
+      </a>
+    </div>
+  );
 }
 
 export default App
