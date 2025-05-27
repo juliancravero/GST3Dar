@@ -18,21 +18,46 @@ body {
 }
 
 .landing-logo {
-  max-width: 600px;
-  width: 160%;
+  max-width: 300px;
+  width: 120%;
 }
 
 .landing-link {
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #000000; /* Violeta */
-  text-decoration: none;
-  background-color: rgb(122, 114, 114);
-  padding: 0.75rem 1.5rem;
-  border-radius: 8px;
-  transition: background-color 0.3s ease;
+  margin-top: 1.5rem;
+  padding: 1rem 2rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  color: #ccc;
+  font-size: 1.25rem;
+  font-weight: 500;
+  animation: pulse 2s infinite ease-in-out;
+  box-shadow: 0 0 8px rgba(124, 58, 237, 0.4);
+  backdrop-filter: blur(4px);
+  transition: all 0.3s ease;
 }
 
 .landing-link:hover {
   background-color: #3b363a;
+}
+
+.under-construction {
+  margin-top: 1.5rem;
+  padding: 1rem 2rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  color: #ccc;
+  font-size: 1.25rem;
+  font-weight: 500;
+  animation: pulse 2s infinite ease-in-out;
+  box-shadow: 0 0 8px rgba(124, 58, 237, 0.4);
+  backdrop-filter: blur(4px);
+  transition: all 0.3s ease;
+}
+
+@keyframes pulse {
+  0%   { transform: scale(1); opacity: 1; }
+  50%  { transform: scale(1.02); opacity: 0.85; }
+  100% { transform: scale(1); opacity: 1; }
 }

@@ -15,16 +15,19 @@ function App() {
 
   return (
       <div className="landing">
-      <img src="/logo.png" alt="GST 3D Logo" className="landing-logo" />
-      <a
-        href="https://www.instagram.com/gst3d.lat/?hl=es"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="landing-link"
-      >
-        Seguinos en Instagram
-      </a>
-    </div>
+        <img src="/logo.png" alt="GST 3D Logo" className="landing-logo" />
+        <div className="under-construction">
+          <span role="img" aria-label="herramienta">🔧</span> Página en construcción
+        </div>
+        <a
+          href="https://www.instagram.com/gst3d.lat/?hl=es"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="landing-link"
+        >
+          Seguinos en Instagram
+        </a>
+      </div>
   );
 }
 
