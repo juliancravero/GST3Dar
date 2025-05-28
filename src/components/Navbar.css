@@ -79,3 +79,28 @@
     display: flex;
   }
 }
+
+.navbar-social {
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+  margin-left: 35rem;
+}
+
+.navbar-social a svg {
+  fill: white;
+  transition: transform 0.3s ease, fill 0.3s ease;
+}
+
+.navbar-social a:hover svg {
+  fill: #7c3aed;
+  transform: scale(1.2);
+}
+.navbar-social svg path {
+  fill: white;
+}
+
+
