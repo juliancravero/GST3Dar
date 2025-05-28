@@ -10,6 +10,8 @@ import './styles.css'
 import Navbar from './components/Navbar';
 import Products from './pages/Products' 
 import Home from './pages/Home'
+import Footer from './components/Footer';
+
 
 function App() {
 
@@ -23,16 +25,12 @@ function App() {
   return (
     <Router>
       <Navbar menuAbierto={menuAbierto} toggleMenu={toggleMenu} />
-
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/products" element={<Products />} />
         {/* agregá más rutas si querés */}
       </Routes>
-
-      <footer>
-        <p>© 2025 GST3Dar</p>
-      </footer>
+      <Footer />
     </Router>
   )
 }

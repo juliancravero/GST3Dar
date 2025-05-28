@@ -1,23 +1,31 @@
 .navbar {
   width: 100%;
   background-color: white;
-  padding: 1rem 2rem;
+  padding-left: 8rem;
+  padding-right: 8rem;
+  min-height: 70px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;            /* <- aseguramos anclado al borde izquierdo */
+  right: 0;           /* <- aseguramos que se extienda al derecho */
   z-index: 1000;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+  margin: 0;
+  gap: 3rem;
 }
 
 .logo {
-  height: 100px;
+  height: 40px;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-links {
   display: flex;
-  gap: 2rem;
+  gap: 3rem;
 }
 
 .nav-links a {
