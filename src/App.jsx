@@ -23,16 +23,20 @@ function App() {
   }
 
   return (
-    <Router>
-      <Navbar menuAbierto={menuAbierto} toggleMenu={toggleMenu} />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/products" element={<Products />} />
-        {/* agregá más rutas si querés */}
-      </Routes>
-      <Footer />
-    </Router>
-  )
+      <Router>
+        <Navbar />
+
+        {/* Este div es el que centra TODO */}
+        <div className="layout">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/products" element={<Products />} />
+          </Routes>
+        </div>
+
+        <Footer />
+      </Router>
+    );
 }
 
 export default App
