@@ -25,12 +25,10 @@ function App() {
   return (
       <Router>
         <Navbar />
-
-        {/* Este div es el que centra TODO */}
-        <div className="layout">
+        <div className="navbar-spacer" />
+          <div className="layout">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/products" element={<Products />} />
           </Routes>
         </div>
 

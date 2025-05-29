@@ -2,27 +2,31 @@
 
 const packs = [
   {
-    nombre: "Pack Verde Metálico",
-    imagen: "/images/pack-verde.jpg",
+    nombre: "PLA+ HIGH SPEED",
+    imagen: "/images/PLARed.png",
   },
   {
-    nombre: "Pack Azul Eléctrico",
-    imagen: "/images/pack-azul.jpg",
+    nombre: "SILK PLA",
+    imagen: "/images/GreenSilk.png",
   },
   {
-    nombre: "Pack Verde Esmeralda",
-    imagen: "/images/pack-esmeralda.jpg",
+    nombre: "SILK TRICOLOR",
+    imagen: "/images/TricolorSilk.png",
   },
   {
-    nombre: "Pack Cobre Premium",
-    imagen: "/images/pack-cobre.jpg",
+    nombre: "FIBRA DE CARBONO",
+    imagen: "/images/FC.png",
+  },
+   {
+    nombre: "PET-G",
+    imagen: "/images/PETGBlue.png",
   },
 ];
 
 export default function GallerySection() {
   return (
     <section className="packs-section" id="packs">
-      <h2 className="packs-title">PACKS</h2>
+      <h2 className="packs-title">NUESTROS FILAMENTOS</h2>
       <div className="packs-grid">
         {packs.map((pack, idx) => (
           <div key={idx} className="pack-card">

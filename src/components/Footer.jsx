@@ -4,8 +4,9 @@ export default function Footer() {
       <div className="footer-content">
         <div className="footer-contact">
           <h3>Contacto</h3>
-          <p>Email: <a href="mailto:contacto@gst3d.com">contacto@gst3d.com</a></p>
-          <p>Whatsapp: <a href="https://wa.me/541145835900">541145835900</a></p>
+          <p>Email: <a href="mailto:contacto@gst3d.com">info@gst3d.com</a></p>
+          <p>Whatsapp compras minorsta Argentina: <a href="https://wa.me/541145835900">541145835900</a></p>
+          <p>Whatsapp compras mayoristas Internacionales: <a href="https://wa.me/+5493516871236">+5493516871236</a></p>
         </div>
 
         <div className="footer-social">
@@ -18,7 +19,7 @@ export default function Footer() {
               </svg>
             </a>
 
-            <a href="https://wa.me/541145835900" target="_blank" aria-label="WhatsApp">
+            <a href="https://wa.me/+5493516871236" target="_blank" aria-label="WhatsApp">
               <svg width="50" height="50" fill="white" viewBox="0 0 24 24">
                 <path d="M12.004 2.002a9.987 9.987 0 0 0-8.488 15.197l-1.315 4.784 4.91-1.286a9.985 9.985 0 1 0 4.893-18.695zm0 18.318a8.3 8.3 0 0 1-4.225-1.17l-.3-.179-2.91.76.782-2.862-.192-.296a8.299 8.299 0 1 1 6.845 3.747zm4.781-6.214c-.263-.131-1.556-.765-1.798-.853-.241-.088-.417-.131-.592.131s-.679.853-.831 1.028c-.152.175-.304.197-.567.066a6.744 6.744 0 0 1-2.003-1.233 7.535 7.535 0 0 1-1.398-1.743c-.152-.263-.016-.405.115-.536.118-.118.263-.304.394-.456a1.808 1.808 0 0 0 .263-.438.493.493 0 0 0-.022-.456c-.066-.132-.591-1.424-.81-1.954-.213-.511-.43-.442-.592-.451l-.504-.009a.965.965 0 0 0-.704.33c-.241.263-.92.897-.92 2.187s.942 2.537 1.072 2.713c.131.175 1.853 2.83 4.498 3.964.629.272 1.119.435 1.501.557.631.2 1.205.172 1.66.105.506-.075 1.556-.636 1.775-1.249.219-.614.219-1.139.153-1.249-.066-.11-.241-.175-.504-.304z"/>
               </svg>

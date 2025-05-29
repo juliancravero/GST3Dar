@@ -1,9 +1,10 @@
 import { useState, useEffect } from "react";
 
 const slides = [
-  "/images/Tricolor.png",
-  "/images/Capibaras.png",
-  "/images/Firefly.png"
+  "/images/Banner4.png",
+  "/images/Banner3.png",
+  "/images/Banner1.png",
+  "/images/banner2.png"
 ];
 
 export default function HeroSlider() {

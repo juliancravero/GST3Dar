@@ -14,10 +14,10 @@ const Navbar = () => {
         </Link>
       </div>
       <nav className={`nav-links ${menuOpen ? 'active' : ''}`}>
-        <Link to="/" onClick={() => setMenuOpen(false)}>Home</Link>
-        <Link to="/about" onClick={() => setMenuOpen(false)}>Nosotros</Link>
-        <Link to="/products" onClick={() => setMenuOpen(false)}>Productos</Link>
-        <Link to="/contact" onClick={() => setMenuOpen(false)}>Contacto</Link>
+        <Link to="/" onClick={() => setMenuOpen(false)}>INICIO</Link>
+        <Link to="/about" onClick={() => setMenuOpen(false)}>NOSOTROS</Link>
+        <Link to="/products" onClick={() => setMenuOpen(false)}>PRODUCTOS</Link>
+        <Link to="/contact" onClick={() => setMenuOpen(false)}>CONTACTO</Link>
       </nav>
       <div className="navbar-social">
          <a href="https://www.instagram.com/gst3d.lat/" target="_blank" aria-label="Instagram">
