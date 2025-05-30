@@ -5,13 +5,17 @@ import logo from '/logo_new.png';
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-
   return (
     <header className="navbar">
       <div className="logo-container">
         <Link to="/">
           <img src={logo} alt="Logo" className="logo" />
         </Link>
+      </div>
+      <div className={`hamburger ${menuOpen ? 'open' : ''}`} onClick={() => setMenuOpen(!menuOpen)}>
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
       <nav className={`nav-links ${menuOpen ? 'active' : ''}`}>
         <Link to="/" onClick={() => setMenuOpen(false)}>INICIO</Link>
@@ -42,15 +46,6 @@ const Navbar = () => {
                 24 24 23.406 24 22.675V1.325C24 .593 23.407 0 22.675 0z"/>
             </svg>
           </a>
-      </div>
-
-      <div
-        className={`hamburger ${menuOpen ? 'open' : ''}`}
-        onClick={() => setMenuOpen(!menuOpen)}
-      >
-        <span></span>
-        <span></span>
-        <span></span>
       </div>
     </header>
   );

@@ -8,6 +8,7 @@ body, html {
 .layout {
   width: 100%;
   max-width: 1200px;
+  min-height: 100vh;
   margin: 0 auto;
   padding-inline: 1rem;
   padding-block: 2rem;
@@ -168,11 +169,14 @@ body, html {
 }
 /* Gallery Section */
 .packs-section {
-  padding: 2rem;
+  padding: 1.5rem 1rem;
   background-color: #000;
   color: white;
-  border-radius: 12px;
+  border-radius: 8px;
   margin-bottom: 3rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .packs-title {
@@ -184,8 +188,9 @@ body, html {
 
 .packs-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
+  justify-items: center;
 }
 
 .pack-card {
@@ -211,6 +216,21 @@ body, html {
   padding: 0.75rem;
   font-weight: 500;
   font-size: 1rem;
+}
+@media (max-width: 768px) {
+  .pack-img {
+    height: 300px; /* ajustamos la altura */
+  }
+
+  .pack-name {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .packs-section {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 /* Split Section */

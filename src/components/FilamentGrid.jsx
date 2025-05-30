@@ -2,15 +2,18 @@
 
 const filamentos = {
   PLA: [
-    "/images/pla-applegreen.jpg",
-    "/images/pla-capibara.jpg",
+    "/images/PLARed.png",
+    "/images/Varios.png",
   ],
-  PETG: ["/images/petg-blanco.jpg"],
-  TPU: ["/images/tpu-negro.jpg"],
-  SILK: ["/images/silk-gold.jpg"],
-  ABS: ["/images/abs-blanco.jpg"],
-  ASA: ["/images/asa-negro.jpg"],
-  ESPECIALES: ["/images/especial-carbon.jpg"],
+  PETG: ["/images/PETGBlue.png"],
+  //TPU: ["/images/tpu-negro.jpg"],
+  SILK: [
+    "/images/GreenSilk.png",
+    "/images/TricolorSilk.png"
+  ],
+  //ABS: ["/images/abs-blanco.jpg"],
+  //ASA: ["/images/asa-negro.jpg"],
+  ESPECIALES: ["/images/FC.png"],
 };
 
 export default function FilamentGrid({ categoria }) {
