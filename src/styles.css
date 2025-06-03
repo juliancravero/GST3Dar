@@ -85,6 +85,12 @@ body, html {
   max-width: 1200px;
   margin: 0 auto;
 }
+.product-info {
+  padding: 0.5rem 1rem;
+  text-align: center;
+  font-weight: 400;
+  color: #ffffff;
+}
 
 .products-title {
   font-size: 2rem;
@@ -131,13 +137,15 @@ body, html {
 }
 
 .product-card {
-  background-color: white;
-  color: black;
+  background-color: #111;
+  color: rgb(0, 0, 0);
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
-
+.product-card:hover {
+  transform: scale(1.20);
+}
 .product-img {
   width: 100%;
   height: 200px;

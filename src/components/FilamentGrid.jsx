@@ -1,59 +1,66 @@
 // src/components/FilamentGrid.jsx
 
 const filamentos = {
-  PLA: [
-    "/images/PLARed.png",
-    "/images/Varios.png",
-    "/images/1.jpg",
-    "/images/2.jpg",
-    "/images/3.jpg",
-    "/images/4.jpg",
-    "/images/6.jpg",
-    "/images/5.jpg",
-    "/images/7.jpg",
-    "/images/8.jpg",
-    "/images/9.jpg",
-    "/images/10.jpg",
-    "/images/11.jpg",
-    "/images/12.jpg",
-    "/images/13.jpg",
-    "/images/14.jpg",
-    "/images/15.jpg",
-    "/images/16.jpg",
-    "/images/17.jpg",
-    "/images/18.jpg",
-    "/images/19.jpg",
-    "/images/20.jpg",
-    "/images/21.jpg",
-    "/images/22.jpg",
-    "/images/23.jpg",
-    "/images/24.jpg",
-    "/images/25.jpg",
-    "/images/26.jpg",
-    "/images/27.jpg",
-    "/images/28.jpg",
-    "/images/29.jpg",
-    "/images/30.jpg",
-    "/images/31.jpg",
-    "/images/32.JPG",
+ PLA: [
+    { nombre: "ARMY GREEN", src: "/images/1.jpg" },
+    { nombre: "GLITTER ARMY GREEN", src: "/images/2.jpg" },
+    { nombre: "BROWN", src: "/images/3.jpg" },
+    { nombre: "CRYSTAL", src: "/images/4.jpg" },
+    { nombre: "BLACK", src: "/images/5.jpg" },
+    { nombre: "APPLE GREEN", src: "/images/6.jpg" },
+    { nombre: "BLUE", src: "/images/7.jpg" },
+    { nombre: "GLITTER BLACK", src: "/images/8.jpg" },
+    { nombre: "GLITTER BLUE", src: "/images/9.jpg" },
+    { nombre: "GLITTER RED", src: "/images/10.jpg" },
+    { nombre: "GLITTER SILVER", src: "/images/11.jpg" },
+    { nombre: "FIREFLY", src: "/images/12.jpg" },
+    { nombre: "ORANGE FLUOR", src: "/images/14.jpg" },
+    { nombre: "SILVER", src: "/images/15.jpg" },
+    { nombre: "FUCHSIA", src: "/images/16.jpg" },
+    { nombre: "GOLD", src: "/images/17.jpg" },
+    { nombre: "GLITTER GOLD", src: "/images/18.jpg" },
+    { nombre: "NAFTA SUPER", src: "/images/19.jpg" },
+    { nombre: "LIGHT BLUE", src: "/images/20.jpg" },
+    { nombre: "LIGHT PINK", src: "/images/21.jpg" },
+    { nombre: "VARIABLE", src: "/images/22.jpg" },
+    { nombre: "LIGHT YELLOW", src: "/images/23.jpg" },
+    { nombre: "LIGHT BROWN", src: "/images/24.jpg" },
+    { nombre: "MUSTARD", src: "/images/25.jpg" },
+    { nombre: "ORANGE", src: "/images/26.jpg" },
+    { nombre: "PINK", src: "/images/27.jpg" },
+    { nombre: "RED", src: "/images/28.jpg" },
+    { nombre: "VIOLET", src: "/images/29.jpg" },
+    { nombre: "ULTRA WHITE", src: "/images/30.jpg" },
+    { nombre: "YELLOW FLUOR", src: "/images/31.jpg" },
   ],
-  PETG: ["/images/PETGBlue.png"],
+  PETG: [
+    { nombre: "PETG Blue", src: "/images/PETGBlue.png" }
+  ],
   //TPU: ["/images/tpu-negro.jpg"],
   SILK: [
-    "/images/GreenSilk.png",
-    "/images/TricolorSilk.png"
+    { nombre: "Green Silk", src: "/images/GreenSilk.png" },
+    { nombre: "Tricolor Silk", src: "/images/TricolorSilk.png" }
   ],
   //ABS: ["/images/abs-blanco.jpg"],
   //ASA: ["/images/asa-negro.jpg"],
-  ESPECIALES: ["/images/FC.png"],
+  ESPECIALES: [
+    { nombre: "Fibra de Carbono", src: "/images/FC.png" }
+  ],
 };
 
 export default function FilamentGrid({ categoria }) {
   return (
     <div className="products-grid">
-      {filamentos[categoria]?.map((src, idx) => (
+      {filamentos[categoria]?.map((prod, idx) => (
         <div key={idx} className="product-card">
-          <img src={src} alt={`Filamento ${categoria} ${idx + 1}`} className="product-img" />
+          <img
+            src={prod.src}
+            alt={`Filamento ${prod.nombre}`}
+            className="product-img"
+          />
+          <div className="product-info">
+            <p>{prod.nombre}</p>
+          </div>
         </div>
       ))}
     </div>
