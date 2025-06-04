@@ -4,9 +4,9 @@ export default function Footer() {
       <div className="footer-content">
         <div className="footer-contact">
           <h3>Contacto</h3>
-          <p>Email: <a href="mailto:contacto@gst3d.com">info@gst3d.com</a></p>
-          <p>Whatsapp compras minorsta Argentina: <a href="https://wa.me/541145835900">541145835900</a></p>
-          <p>Whatsapp compras mayoristas Internacionales: <a href="https://wa.me/+5493516871236">+5493516871236</a></p>
+          <p>Mail: <a href="mailto:contacto@gst3d.com">ventas@gst3d.com</a></p>
+          <p>Compras Argentina: <a href="https://wa.me/+541145835900">+541145835900</a></p>
+          <p>Compras Internacionales: <a href="https://wa.me/+5493516871236">+5493516871236</a></p>
         </div>
 
         <div className="footer-social">
